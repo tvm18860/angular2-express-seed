@@ -1,0 +1,6 @@
+<button md-raised-button color="primary" (click)="fetchData()"> Fetch New Data </button>
+<button md-raised-button color="secondary" (click)="showToast()"> Show Toast </button>
+
+<md-list>
+  <md-list-item *ngFor="let num of data"> {{num}} </md-list-item>
+</md-list>

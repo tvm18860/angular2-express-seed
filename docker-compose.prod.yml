@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: ./docker/prod/Dockerfile
+    ports:
+      - "3000:3000"
+    environment: 
+      NODE_ENV: production
+    container_name: angular2-prod

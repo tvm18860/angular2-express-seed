@@ -1,0 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* pre-built angular 2 material theme. you can also define your own: https://github.com/angular/material2/blob/master/docs/theming.md */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
