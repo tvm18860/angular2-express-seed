@@ -4,18 +4,18 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', 'angular-cli'],
+    frameworks: ['jasmine', '@angular/cli'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-phantomjs-launcher'),
-      require('angular-cli/plugins/karma')
+      require('@angular/cli/plugins/karma')
     ],
     files: [
       { pattern: './public/test.ts', watched: false }
     ],
     preprocessors: {
-      './public/test.ts': ['angular-cli']
+      './public/test.ts': ['@angular/cli']
     },
     angularCli: {
       config: './angular-cli.json',
