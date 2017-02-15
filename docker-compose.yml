@@ -13,5 +13,4 @@ services:
       - "./angular-cli.json:/opt/app/angular-cli.json"
       - "./public/:/opt/app/public/"
       - "./server/:/opt/app/server/"
-      - "/opt/app/node_modules"
     container_name: angular2-dev

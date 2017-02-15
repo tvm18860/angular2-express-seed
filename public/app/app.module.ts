@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { RoutingModule } from './app-routing.module';
 
 // Third party modules
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs'; // Couple components in Angular material have dependency on hammerjs
 
@@ -26,6 +27,7 @@ import { DataComponent } from './data/data.component';
     FormsModule,
     HttpModule,
     RoutingModule,
+    FlexLayoutModule,
     MaterialModule.forRoot()
   ],
   providers: [

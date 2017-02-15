@@ -67,7 +67,7 @@ or prefix the following commands with ```docker exec <container_name>```
 npm test              // Run all the tests
 npm run test-server   // Run only backend tests
 npm run test-frontend // Run frontend tests
-npm run e2d 		  // Run e2e tests
+npm run e2e 		  // Run e2e tests
 ```
 
 The karma tests are run in the docker container in PhantomJS.
