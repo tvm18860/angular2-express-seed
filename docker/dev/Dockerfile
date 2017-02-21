@@ -22,7 +22,7 @@ RUN npm install
 # saves image build time as it may avoid re-running the install
 USER root
 COPY dev.js ./dev.js
-COPY angular-cli.json ./angular-cli.json
+COPY .angular-cli.json ./.angular-cli.json
 COPY karma.conf.js ./karma.conf.js
 COPY public ./public/
 COPY server ./server/

@@ -21,11 +21,11 @@ RUN npm install --production
 # saves image build time as it may avoid re-running the install
 USER root
 COPY app.js ./app.js
-COPY angular-cli.json ./angular-cli.json
+COPY .angular-cli.json ./.angular-cli.json
 COPY public ./public/
 COPY server ./server/
 RUN chown -R app:app /opt/*
 USER app
 
-RUN ./node_modules/angular-cli/bin/ng build --prod
+RUN ./node_modules/@angular/cli/bin/ng build --prod
 CMD ["npm", "start"]

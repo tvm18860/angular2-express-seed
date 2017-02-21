@@ -1,6 +1,6 @@
 version: "2"
 services:
-  appdev:
+  dev:
     build:
       dockerfile: ./docker/dev/Dockerfile
       context: .
@@ -10,7 +10,7 @@ services:
     volumes:
       - "./dev.js:/opt/app/dev.js"
       - "./karma.conf.js:/opt/app/karma.conf.js"
-      - "./angular-cli.json:/opt/app/angular-cli.json"
+      - "./.angular-cli.json:/opt/app/.angular-cli.json"
       - "./public/:/opt/app/public/"
       - "./server/:/opt/app/server/"
     container_name: angular2-dev

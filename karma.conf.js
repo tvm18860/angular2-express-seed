@@ -18,7 +18,7 @@ module.exports = function (config) {
       './public/test.ts': ['@angular/cli']
     },
     angularCli: {
-      config: './angular-cli.json',
+      config: './.angular-cli.json',
       environment: 'dev'
     },
     reporters: ['progress'],
