@@ -67,11 +67,9 @@ or prefix the following commands with ```docker exec <container_name>```
 npm test              // Run all the tests
 npm run test-server   // Run only backend tests
 npm run test-frontend // Run frontend tests
-npm run e2e 		  // Run e2e tests
 ```
 
 The karma tests are run in the docker container in PhantomJS.
-The e2e Protractor tests run in Chrome by default, but this can easily be changed.
 
 ## New to Angular 2?
 There is a basic structure set up to start working with in this repo,
