@@ -3,7 +3,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { OVERLAY_PROVIDERS, MdLiveAnnouncer } from '@angular/material';
+import { OVERLAY_PROVIDERS, LIVE_ANNOUNCER_PROVIDER } from '@angular/material';
 import { MockHttp } from '../../spec/http.stub';
 import { DataService } from '../data.service';
 import { DataComponent } from '../data.component';
@@ -20,7 +20,7 @@ describe('DataComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ DataComponent ],
-      providers: [ DataService, OVERLAY_PROVIDERS, MdLiveAnnouncer ].concat(new MockHttp().providers),
+      providers: [ DataService, OVERLAY_PROVIDERS, LIVE_ANNOUNCER_PROVIDER].concat(new MockHttp().providers),
       schemas: [ NO_ERRORS_SCHEMA ]
     })
 

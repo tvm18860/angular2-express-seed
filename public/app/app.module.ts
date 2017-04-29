@@ -1,5 +1,6 @@
 // Core Angular 2 modules
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -28,6 +29,7 @@ import { DataComponent } from './data/data.component';
     HttpModule,
     RoutingModule,
     FlexLayoutModule,
+    BrowserAnimationsModule,
     MaterialModule.forRoot()
   ],
   providers: [
